@@ -1,12 +1,17 @@
 #Given a set of domains, this script will query the zScaler API and return their category
 
-import config       #imports the config file from the root of this directory which imports the config from the 
+import sys
+# insert at 1, 0 is the script path (or '' in REPL)
+sys.path.insert(0, '/dev/config/')
+
+
+import config
 
 import time
 import http.client
 import json
 
-
+print(config.zscaler_baseuri)
 
 #https://help.zscaler.com/zia/api-getting-started
 def obfuscateApiKey (apiKey):
