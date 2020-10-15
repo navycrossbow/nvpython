@@ -11,7 +11,6 @@ import time
 import http.client
 import json
 
-print(config.zscaler_baseuri)
 
 #https://help.zscaler.com/zia/api-getting-started
 def obfuscateApiKey (apiKey):
